@@ -1,0 +1,17 @@
+membuat papan catur
+    // # space dan space #
+
+    let s = "";
+    for (let i = 0; i < 10; i++) {
+    for (let j = 0; j < 5; j++) {
+        s += `#`;
+        s += ` `
+    }
+    s += "\n";
+    for (let k = 0; k < 5; k++) {
+        s += ` `
+        s += `#`;
+    }
+    s += "\n";
+    }
+    console.log(s);
