@@ -1,0 +1,15 @@
+    var s = '';
+
+    for (var baris = 1; baris <= 5; baris++){
+    for (var i = baris; i <= 5; i++){
+        s += ' ';
+    }
+    for(var btg = 1; btg <= baris; btg++){
+        s +="*"
+    }
+    for(var l = 1; l <= baris - 1; l++){
+        s += '*'
+    }
+    s+="\n"
+    }
+    console.log(s);
