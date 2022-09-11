@@ -1,0 +1,32 @@
+let faceBintang = `*`;
+let bintang = 1;
+let jmlBintang = 5;
+let stringKosong = ``;
+let stringSpasi = ` `
+let newline = `\n`;
+
+for (bintang; bintang <= jmlBintang; bintang++) {
+for (let bintangBaru = 5; bintangBaru >= bintang; bintangBaru--) {
+    stringKosong += stringSpasi;
+}
+for (let bintangBaru1 = 1; bintangBaru1 <= bintang; bintangBaru1++) {
+    stringKosong += faceBintang;
+}
+for (let bintangbaru2 = 1; bintangbaru2 < bintang; bintangbaru2++) {
+    stringKosong += faceBintang;
+}
+stringKosong += newline;
+}
+for (bintang + 4; bintang >= jmlBintang - 4; bintang--) {
+for (let bintangBaru = 5; bintangBaru >= bintang; bintangBaru--) {
+    stringKosong += stringSpasi;
+}
+for (let bintangbaru1 = 1; bintangbaru1 <= bintang; bintangbaru1++) {
+    stringKosong += faceBintang;
+}
+for (let bintangbaru2 = 1; bintangbaru2 < bintang; bintangbaru2++) {
+    stringKosong += faceBintang;
+}
+stringKosong += newline
+}
+console.log(stringKosong);
