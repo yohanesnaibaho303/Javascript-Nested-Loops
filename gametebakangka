@@ -1,0 +1,39 @@
+let nama = prompt('Masukkan Nama Anda');
+let greets = alert('Selamat datang di Permainan Tebak Angka ' + nama);
+let ulang = true;
+
+while (ulang) {
+  let chance = 3;
+  let c = Math.floor(Math.random() * 10) + 1;
+  let hasil = '';
+
+  while (chance >= 1) {
+    alert("Memulai Permainan Tebak Angka dengan " + chance + " Kesempatan");
+    let p = parseInt(prompt("Masukkan Angka Tebakan dari 1-10"));
+    if (p === c) {
+      hasil = 'BENAR';
+      alert('Selamat, Anda ' + hasil + ' Angka yang anda tebak adalah ' + c + ' \nSeru kan..!');
+      break;
+    } else if (p < c) {
+      hasil = 'RENDAH';
+      chance -= 1;
+      alert('Angka tebakan Anda ' + p + ' adalah terlalu ' + hasil + '\nKesempatan tersisa ' + chance + '\nAyo Coba Lagi...');
+    } else if (p > c) {
+      hasil = 'TINGGI';
+      chance -= 1;
+      alert('Angka tebakan Anda ' + p + ' adalah terlalu ' + hasil + '\nKesempatan tersisa ' + chance + '\nAyo Coba Lagi...');
+    }
+
+    if (chance === 2){
+        alert('Ayo Semangat ' + nama + '.. tersisa ' + chance + ' Kesempatan');
+    }
+    if (chance === 1){
+        alert('Ayo Semangat ' + nama + '.. tersisa ' + chance + ' Kesempatan');
+    }
+    if (chance === 0) {
+        alert('Anda Kalah \nAngka yang dicari adalah ' + c + ' \nJangan pantang menyerah, Ayo main lagi..');
+    }
+  }
+  ulang = confirm('Apakah ' + nama + ' Mauu Bermain Lagi?');
+}
+alert("Thank You " + nama);
