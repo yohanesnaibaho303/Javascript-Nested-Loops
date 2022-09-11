@@ -1,8 +1,19 @@
-var s = '';
-for ( var i = 0; i < 10; i++){
-    for ( var j = 0; j <= i; j++){      
-        s += '*';
+bikin segitiga siku bintang dari kecil(1) ke besar(10)
+    var s = '';
+    for ( var i = 0; i < 10; i++){
+        for ( var j = 0; j <= i; j++){      
+            s += '*';
+        }
+            s += '\n'
     }
-        s += '\n'
-}
-console.log(s); 
+    console.log(s); 
+
+bikin segitiga siku2 bintang dari besar(10) ke kecil(1)
+    var s = '';
+    for ( var i = 10; i > 0; i--){
+        for ( var j = 0; j < i; j++){      
+            s += '*';
+        }
+            s += '\n'
+    }
+    console.log(s); 
